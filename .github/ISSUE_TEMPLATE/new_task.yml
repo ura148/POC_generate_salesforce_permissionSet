@@ -1,0 +1,70 @@
+name: 新規タスク / New Task
+description: 新規タスクの作成用テンプレート / Template for new tasks
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新規タスクの作成ありがとうございます。以下の項目を記入してください。
+        Thank you for creating a new task. Please fill out the following items.
+
+  - type: input
+    attributes:
+      label: タスクの概要 / Task Summary
+      description: |
+        タスクの概要を簡潔に記載してください
+        Please provide a brief summary of the task
+      placeholder: "例: ユーザー認証機能の実装 / Example: Implement user authentication"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 詳細な説明 / Detailed Description
+      description: |
+        タスクの詳細な説明を記載してください
+        Please provide a detailed description of the task
+      placeholder: |
+        - 目的 / Purpose
+        - 要件 / Requirements
+        - 制約条件 / Constraints
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 受け入れ基準 / Acceptance Criteria
+      description: |
+        タスクが完了したと判断するための基準を記載してください
+        Please list the criteria that must be met for this task to be considered complete
+      placeholder: |
+        - [ ] 基準1 / Criteria 1
+        - [ ] 基準2 / Criteria 2
+        - [ ] 基準 3 / Criteria 3
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 技術的な考慮事項 / Technical Considerations
+      description: |
+        実装時に考慮すべき技術的な事項を記載してください
+        Please list any technical considerations for implementation
+      placeholder: |
+        - 使用する技術 / Technologies to use
+        - 影響範囲 / Scope of impact
+        - 注意点 / Points to note
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 関連リソース / Related Resources
+      description: |
+        関連するドキュメントやリソースへのリンクを記載してください
+        Please provide links to related documents or resources
+      placeholder: |
+        - 関連ドキュメント / Related documents
+        - 参考URL / Reference URLs
+    validations:
+      required: false

@@ -1,0 +1,78 @@
+name: バグ報告 / Bug Report
+description: バグの報告用テンプレート / Template for bug reports
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。以下の項目を記入してください。
+        Thank you for reporting a bug. Please fill out the following items.
+
+  - type: input
+    attributes:
+      label: 発生環境 / Environment
+      description: |
+        バグが発生した環境を記載してください
+        Please describe the environment where the bug occurred
+      placeholder: "例: Production / Sandbox / Developer Edition"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: バグの内容 / Bug Description
+      description: |
+        バグの内容を具体的に記載してください
+        Please describe the bug in detail
+      placeholder: |
+        例:
+        1. どのような操作を行ったか
+        2. 何が起きたか
+        3. 期待する動作
+
+        Example:
+        1. What actions were taken
+        2. What happened
+        3. Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 再現手順 / Steps to Reproduce
+      description: |
+        バグを再現するための手順を記載してください
+        Please provide steps to reproduce the bug
+      placeholder: |
+        1. '...' へ移動
+        2. '...' をクリック
+        3. '...' を入力
+        4. エラーが発生
+
+        1. Go to '...'
+        2. Click on '...'
+        3. Enter '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: スクリーンショット / Screenshots
+      description: |
+        可能であれば、スクリーンショットを添付してください
+        If possible, please attach screenshots
+      placeholder: |
+        スクリーンショットをここにドラッグ&ドロップ
+        Drag and drop screenshots here
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 追加情報 / Additional Information
+      description: |
+        その他、関連する情報があれば記載してください
+        Please provide any additional relevant information
+    validations:
+      required: false
